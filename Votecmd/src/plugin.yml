@@ -1,0 +1,23 @@
+name: VoteCmd
+version: 1.7
+author: Megaro & CoonFight
+website: http://www.ayocraft.de/
+
+main: main.VoteCmd
+
+permissions:
+  votecmd.*:
+    children:
+      votecmd.other: true
+      votecmd.staff: true
+      votecmd.admin: true
+
+commands:
+  vote:
+    description: Votekommando
+    aliases: [votes]
+  votepoints:
+    description: VotePoints
+    aliases: [vp, votepoint]
+    
+depends: [Votifier, Vault, LuckPerms, DailyReward]
